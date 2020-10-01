@@ -1,3 +1,11 @@
+# YAltaCV - AltaCV, but with your data in a single YAML file
+
+It is time-consuming to goes through the LaTeX file every time you want to update your CV.
+Therefore, I have an idea to use some python scripts and GitHub Actions to automatically generate LaTeX fragments to be imported
+at those sections. The data that is used for input is in form of a simple YAML file.
+
+Following is the README of the original repo, kept as is.
+
 # AltaCV, yet another LaTeX CV/Résumé class
 
 v1.3.2 (17 May 2020), by LianTze Lim (liantze@gmail.com)
