@@ -1,23 +1,15 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -33,11 +25,9 @@ jobs:
           # The working directory for the LaTeX engine
           # working_directory: # optional
           # The LaTeX engine to be invoked
-          compiler: pdflatex # optional, default is latexmk
+          # compiler: pdflatex # optional, default is latexmk
           # Extra arguments to be passed to the LaTeX engine
           # args: # optional, default is -pdf -file-line-error -halt-on-error -interaction=nonstopmode
-          # [Deprecated] Install extra packages by tlmgr
-          # extra_packages: biber, pdflatex
           # Install extra packages by apk
           # extra_system_packages: # optional
           # Arbitrary bash codes to be executed before compiling LaTeX documents
@@ -46,10 +36,3 @@ jobs:
           post_compile: |
             git add sample.pdf
             git commit -m "Generate PDF file"
-            git push
-          # Instruct latexmk to enable --shell-escape
-          # latexmk_shell_escape: # optional
-          # Instruct latexmk to use LuaLaTeX
-          # latexmk_use_lualatex: # optional
-          # Instruct latexmk to use XeLaTeX
-          # latexmk_use_xelatex: # optional
