@@ -1,0 +1,116 @@
+- colorscheme:
+    - name: black
+    - tagline: '#8F0D0D'
+    - headingrule: '#E7D192'
+    - subheading: '#8F0D0D'
+    - accent: '#8F0D0D'
+    - emphasis: '#2E2E2E'
+    - body: '#666666'
+- name: Your Name Here
+- tagline: Your Position or Tagline Here
+- photo: Globe_High
+- personalinfo:
+    - email: your_name@email.com
+    - phone: 000-00-0000
+    - mailaddress: Åddrésş, Street, 00000 Cóuntry
+    - location: location, COUNTRY
+    - homepage: www.homepage.com
+    - twitter: '@twitterhandle'
+    - linkedin: your_id
+    - github: your_id
+- column-1:
+    - events-1:
+        - heading: Experience
+        - event-1:
+            - title: Job Title 1
+            - org: Company 1
+            - time: Month 20XX -- Ongoing
+            - location: Location
+            - description:
+                - Job description 1
+                - Job description 2
+        - event-2:
+            - title: Job Title 2
+            - org: Company 2
+            - time: Month 20XX -- Ongoing
+            - location: Location
+            - description:
+                - Job description 1
+                - Job description 2
+    - events-2:
+        - heading: Projects
+        - event-1:
+            - title: Project 1
+            - org: Funding agency/institution
+            - location: Location
+            - description:
+                - Detail 1
+                - Detail 2
+        - event-2:
+            - title: Project 2
+            - org: Funding agency/institution
+            - time: Project duration
+            - location: Location
+            - description: A short abstract would also work.
+- column-2:
+    - quote:
+        - heading: My Life Philosophy
+        - quote: Something smart or heartfelt, preferably in one sentence.
+    - achievements:
+        - heading: Most Proud of
+        - achievement-1:
+            - icon: \faTrophy
+            - title: Fantastic Achievement
+            - description: and some details about it
+        - achievement-2:
+            - icon: \faHeartbeat
+            - title: Another achievement
+            - description: more details about it of course
+        - achievement-3:
+            - icon: \faHeartbeat
+            - title: Another achievement
+            - description: more details about it of course
+    - badges:
+        - heading: Strengths
+        - Hard-working
+        - Eye for detail
+        - Motivator \& Leader
+        - dividertag
+        - C++
+        - Embedded Systems
+        - Statistical Analysis
+    - scales:
+        - heading: Languages
+        - English: 5
+        - Spanish: 4
+        - German: 3
+    - events:
+        - heading: Education
+        - event-1:
+            - title: Ph.D.\ in Your Discipline
+            - org: Your University
+            - time: Sept 2002 -- June 2006
+            - description: 'Thesis title: Wonderful Research'
+        - event-2:
+            - title: M.Sc.\ in Your Discipline
+            - org: Your University
+            - time: Sept 2001 -- June 2002
+        - event-3:
+            - title: B.Sc.\ in Your Discipline
+            - org: Stanford University
+            - time: Sept 1998 -- June 2001
+    - referees:
+        - prof-1:
+            - name: Prof.\ Alpha Beta
+            - institute: Institute
+            - email: a.beta@university.edu
+            - addresses:
+                - Address Line 1
+                - Address line 2
+        - prof-2:
+            - name: Prof.\ Gamma Delta
+            - institute: Institute
+            - email: g.delta@university.edu
+            - addresses:
+                - Address Line 1
+                - Address line 2
