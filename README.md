@@ -19,6 +19,47 @@ To read the original README, see [https://github.com/liantze/AltaCV](liantze/Alt
 * However if you're using `academicons`, you _must_ use either XeLaTeX or LuaLaTeX. If the doc then compiles but the icons don't show up in the output PDF, try compiling with LuaLaTeX instead.
 * The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) and [Roboto Slab fonts](https://github.com/googlefonts/robotoslab). Feel free to use a different typeface package instead—often a different typeface will change the entire CV's feel.
 
+## Section types
+
+The `data.yml` file looks like:
+```yaml
+...
+column-1:
+    - section-1:
+        - item-1: description
+        - item-2:
+            - prop-1: property
+            - prop-2: another property
+            - description: Description
+column-2:
+    - section-2:
+        - item-1: description
+        - item-2: description
+```
+
+Following are 4 types of sections, with their properties:
+
+- `event`:
+    - `title`: The name or title of the event
+    - `org`: The organization related to this event
+    - `time`: The time from start to finish
+    - `location`: The location where the even occured
+    - `description`: a short abstract if is a string, a bulleted list if is a list
+    - Used for life/career events like education/jobs
+- `quote`:
+    - `quote`: the quote
+- `badge`:
+    - List of items that are showed as badges
+    - `dividertag` is to insert divider between groups of badges
+- `scale`:
+    - List of items that are showed on scale 0-5
+- `referee`:
+    - List of referees
+    - `name`: name of the referee
+    - `institute`: name of the institute
+    - `email`: referee's email address
+    - `addresses`: list of email addresses
+
 ## Plan
 
 Here is what I'm planning to do on this fork:
@@ -39,7 +80,7 @@ working - optional branch for pushing works in progress before pulling to master
 │   ├── personal-info.tex
 │   ├── skills.tex
 │   └── other-info.tex
-├── data.yaml -- data here
+├── data.yml -- data here
 ├── generate_tex.py -- this generates tex from yaml
 ├── Globe_High.png -- this is a picture from the original repo, replace this with your photo for CV
 ├── LICENSE.md

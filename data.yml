@@ -1,6 +1,6 @@
 - colorscheme:
-    - name: black
-    - tagline: '#8F0D0D'
+    - name: black # You can set color by name
+    - tagline: '#8F0D0D' # Or hex code
     - headingrule: '#E7D192'
     - subheading: '#8F0D0D'
     - accent: '#8F0D0D'
@@ -19,9 +19,9 @@
     - linkedin: your_id
     - github: your_id
 - column-1:
-    - events-1:
-        - heading: Experience
-        - event-1:
+    - events-1: # Each section is named as plural of its items
+        - heading: Experience # The heading used for the section; without heading the default is the type of section
+        - event-1: # Each item is indexed with numbers
             - title: Job Title 1
             - org: Company 1
             - time: Month 20XX -- Ongoing
@@ -52,7 +52,7 @@
             - time: Project duration
             - location: Location
             - description: A short abstract would also work.
-- column-2:
+- column-2: # There are two columns
     - quote:
         - heading: My Life Philosophy
         - quote: Something smart or heartfelt, preferably in one sentence.
@@ -100,14 +100,14 @@
             - org: Stanford University
             - time: Sept 1998 -- June 2001
     - referees:
-        - prof-1:
+        - referee-1:
             - name: Prof.\ Alpha Beta
             - institute: Institute
             - email: a.beta@university.edu
             - addresses:
                 - Address Line 1
                 - Address line 2
-        - prof-2:
+        - referee-2:
             - name: Prof.\ Gamma Delta
             - institute: Institute
             - email: g.delta@university.edu
