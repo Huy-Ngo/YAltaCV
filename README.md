@@ -25,14 +25,14 @@ The `data.yml` file looks like:
 ```yaml
 ...
 column-1:
-    - section-1:
+    - section:
         - item-1: description
         - item-2:
-            - prop-1: property
-            - prop-2: another property
-            - description: Description
+            prop-1: property
+            prop-2: another property
+            description: Description
 column-2:
-    - section-2:
+    - section:
         - item-1: description
         - item-2: description
 ```
