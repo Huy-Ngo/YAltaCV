@@ -97,3 +97,12 @@ working - optional branch for pushing works in progress before pulling to master
 - GA runs the `generate_tex.py` to generate LaTeX fragments into `fragments/`
 - These fragments are imported in sample.tex (or any file that is supposed to be your main file), using package `import`
 - [https://github.com/xu-cheng/latex-action](xu-cheng/latex-action) runs to compile the TeX file and push to `pdf` branch
+
+### Checklist
+
+- [X] Try compiling the template
+- [X] Describe the YAML file
+- [ ] Write a Python script generate fragments from the YAML file
+- [ ] Remove those parts from the template and try to recompile if it works
+- [ ] Write docs for the steps
+- [ ] Set up GH Actions to automate the tasks
