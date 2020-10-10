@@ -76,10 +76,19 @@ working - optional branch for pushing works in progress before pulling to master
 
 ```
 ├── altacv.cls -- the core functions for the template
-├── fragments -- generated tex fragments; in master this would be sample files
-│   ├── personal-info.tex
+├── fragments-1 -- generated tex fragments for column 2
+│   ├── experiences.tex
+│   ├── projects.tex
+│   └── education.tex
+├── fragments-2 -- generated tex fragments for column 1
 │   ├── skills.tex
-│   └── other-info.tex
+│   ├── achievements.tex
+│   └── languages.tex
+├── data.yml -- data here
+├── customized-colorschema.sty -- color schema for the file
+├── personal-info.tex -- Personal info in header of the file
+├── col-1.tex -- LaTeX file for column 1
+├── col-2.tex -- LaTeX file for column 2
 ├── data.yml -- data here
 ├── generate_tex.py -- this generates tex from yaml
 ├── Globe_High.png -- this is a picture from the original repo, replace this with your photo for CV
