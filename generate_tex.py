@@ -135,7 +135,7 @@ def print_section(section):
     }
 
     lines = []
-    lines.append('\\cvsection{' + section_heading + '}\n')
+    lines.append('\n\\cvsection{' + section_heading + '}\n')
     if section_type in printers:
         printer = printers[section_type]
         for i, item in enumerate(section_items):
