@@ -1,4 +1,4 @@
-# YAltaCV - AltaCV, but with your data in a single YAML file (WIP)
+# YAltaCV - AltaCV, but with your data in a single YAML file (MVP)
 
 It is time-consuming to goes through the LaTeX file every time you want to update your CV.
 Therefore, I have an idea to use some python scripts and GitHub Actions to automatically generate LaTeX fragments to be imported
