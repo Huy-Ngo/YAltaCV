@@ -111,7 +111,7 @@ working - optional branch for pushing works in progress before pulling to master
 
 - [X] Try compiling the template
 - [X] Describe the YAML file
-- [ ] Write a Python script generate fragments from the YAML file
-- [ ] Remove those parts from the template and try to recompile if it works
+- [X] Write a Python script generate fragments from the YAML file
+- [X] Remove those parts from the template and try to recompile if it works
 - [ ] Write docs for the steps
 - [ ] Set up GH Actions to automate the tasks
