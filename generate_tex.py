@@ -36,6 +36,7 @@ def print_list(items):
     lines.append('\\begin{itemize}\n')
     for item in items:
         lines.append('\\item ' + item + '\n')
+    lines.append('\\end{itemize}\n')
     return lines
 
 
@@ -81,6 +82,8 @@ def print_badges(badges):
     for badge in badges:
         if badge == 'dividertag':
             lines.append('\n\\divider\\smallskip\n\n')
+        elif badge == 'br':
+            lines.append('\\\\')
         else:
             lines.append('\\cvtag{' + badge + '}\n')
     return lines
