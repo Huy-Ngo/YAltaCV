@@ -19,6 +19,13 @@ To read the original README, see [https://github.com/liantze/AltaCV](liantze/Alt
 * However if you're using `academicons`, you _must_ use either XeLaTeX or LuaLaTeX. If the doc then compiles but the icons don't show up in the output PDF, try compiling with LuaLaTeX instead.
 * The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) and [Roboto Slab fonts](https://github.com/googlefonts/robotoslab). Feel free to use a different typeface package instead—often a different typeface will change the entire CV's feel.
 
+## Instructions
+
+- Install required dependencies from requirements.txt
+- Run generate_tex.py
+- Run pdflatex + biber + pdflatex
+- Check if there is any error
+
 ## Section types
 
 The `data.yml` file looks like:
@@ -105,5 +112,5 @@ working - optional branch for pushing works in progress before pulling to master
 - [X] Describe the YAML file
 - [X] Write a Python script generate fragments from the YAML file
 - [X] Remove those parts from the template and try to recompile if it works
-- [ ] Write docs for the steps
+- [X] Write docs for the steps
 - [ ] Set up GH Actions to automate the tasks
