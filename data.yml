@@ -62,17 +62,17 @@ column-2: # There are two columns
         heading: Most Proud of
         items:
             - achievement:
-                - icon: \faTrophy
-                - title: Fantastic Achievement
-                - description: and some details about it
+                icon: \faTrophy
+                title: Fantastic Achievement
+                description: and some details about it
             - achievement:
-                - icon: \faHeartbeat
-                - title: Another achievement
-                - description: more details about it of course
+                icon: \faHeartbeat
+                title: Another achievement
+                description: more details about it of course
             - achievement:
-                - icon: \faHeartbeat
-                - title: Another achievement
-                - description: more details about it of course
+                icon: \faHeartbeat
+                title: Another achievement
+                description: more details about it of course
     - badges:
         heading: Strengths
         items:
