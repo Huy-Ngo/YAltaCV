@@ -78,10 +78,12 @@ column-2: # There are two columns
         items:
             - Hard-working
             - Eye for detail
+            - br
             - Motivator \& Leader
             - dividertag
             - C++
             - Embedded Systems
+            - br
             - Statistical Analysis
     - scales:
         heading: Languages
