@@ -161,8 +161,35 @@ def write_columns(column, column_name):
             f.writelines(print_section(section))
 
 
+def write_colors(colorscheme):
+    lines = ['\\ProvidesPackage{customized-colorschema}']
+    colornames = {}
+    for name in colorscheme:
+        color = colorscheme[name]
+        if color[0] != '#':
+            colornames[name] = color
+            continue
+        else:
+            color = color[1:]
+            colorname = name + 'Color'
+            colornames[name] = colorname
+        line = '\\definecolor{'
+        line += colorname + '}{HTML}{'
+        line += color + '}\n'
+        lines.append(line)
+
+    for name in colornames:
+        line = '\\colorlet{'
+        line += name + '}{'
+        line += colornames[name] + '}\n'
+        lines.append(line)
+    with open('customized-colorschema.sty', 'w') as f:
+        f.writelines(lines)
+
+
 if __name__ == "__main__":
     with open('personal-info.tex', 'w') as f:
         f.writelines(print_personal_info(data['personalinfo']))
     write_columns(data['column-1'], 'column-1')
     write_columns(data['column-2'], 'column-2')
+    write_colors(data['colorscheme'])
