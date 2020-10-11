@@ -4,7 +4,7 @@ It is time-consuming to goes through the LaTeX file every time you want to updat
 Therefore, I have an idea to use some python scripts and GitHub Actions to automatically generate LaTeX fragments to be imported
 at those sections. The data that is used for input is in form of a simple YAML file.
 
-To read the original README, see [https://github.com/liantze/AltaCV](liantze/AltaCV)
+To read the original README, see [liantze/AltaCV](https://github.com/liantze/AltaCV)
 
 ## Requirements and Compilation
 
