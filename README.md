@@ -22,6 +22,7 @@ To read the original README, see [https://github.com/liantze/AltaCV](liantze/Alt
 ## Instructions
 
 - Install required dependencies from requirements.txt
+- Rewrite data.yml according to your need
 - Run generate_tex.py
 - Run pdflatex + biber + pdflatex
 - Check if there is any error
