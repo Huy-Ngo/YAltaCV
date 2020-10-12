@@ -87,6 +87,7 @@ column-2: # There are two columns
             - Statistical Analysis
     - scales:
         heading: Languages
+        divider: no
         items:
             English: 5
             Spanish: 4
