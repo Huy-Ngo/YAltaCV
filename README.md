@@ -34,15 +34,19 @@ The `data.yml` file looks like:
 ...
 column-1:
     - section:
-        - item-1: description
-        - item-2:
-            prop-1: property
-            prop-2: another property
-            description: Description
+        heading: 'Section heading'
+        items:
+            - item: description
+            - item:
+                prop-1: property
+                prop-2: another property
+                description: Description
 column-2:
     - section:
-        - item-1: description
-        - item-2: description
+        divider: no
+        items:
+            - item: description
+            - item: description
 ```
 
 Following are 4 types of sections, with their properties:
