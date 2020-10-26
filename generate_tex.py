@@ -63,7 +63,7 @@ def print_quote(quote):
     """Return TeX lines for a quote."""
     lines = []
     lines.append('\\begin{quote}\n')
-    lines.append(f"``{quote}''\n")
+    lines.append(f"``{quote}\'\'\n")
     lines.append('\\end{quote}\n')
     return lines
 
