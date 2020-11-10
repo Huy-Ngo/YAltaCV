@@ -30,3 +30,8 @@ jobs:
           commit_message: "Generate LaTeX fragments"
           push_options: '--force'
           branch: pdf
+      - name: Github Action for LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: sample.tex
+
